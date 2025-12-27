@@ -49,3 +49,13 @@ Include screenshots or code examples if applicable.
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+# Runs
+
+```bash
+pip install -r requirements-dev.txt
+
+pytest tests/ -v
+
+pytest tests/ --cov=src --cov-report=term-missing
+```
