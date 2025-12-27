@@ -1,0 +1,91 @@
+# Dependencies
+node_modules/
+bower_components/
+vendor/
+
+# Build outputs
+dist/
+build/
+out/
+*.min.js
+*.min.css
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.test
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage/
+.nyc_output/
+*.test.js
+*.spec.js
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+.pytest_cache/
+.venv/
+venv/
+ENV/
+
+# Java
+*.class
+*.jar
+*.war
+target/
+
+# .NET
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+# Databases
+*.sqlite
+*.sqlite3
+*.db
