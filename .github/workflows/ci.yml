@@ -35,7 +35,7 @@ jobs:
       
       - name: check code formatting with Black
         run: |
-          black --check src/tests/
+          black --check src/ tests/
 
       - name: Lint with flanke8
         run: |
