@@ -71,3 +71,24 @@ jobs:
       - name: Check coverage threshold
         run: |
           coverage report --fail-under=80
+
+  docker: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      
+      - name: Build Docker image
+        run: |
+          docker build -t temperature-api:latest .
+      
+      - name: Test Docker image
+        run: |
+          docker run temperature-api:latest pytest tests/ -v
+      
+      - name: Run Docker container
+        run: |
+          docker run temperature-api:latest
